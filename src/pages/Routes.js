@@ -6,7 +6,7 @@ import Favorites from './Favorites';
 import Profile from './Profile';
 import NotFound from './NotFound';
 import Login from './Login';
-// import ProfileEdit from './ProfileEdit';
+import ProfileEdit from './ProfileEdit';
 // import NotFound from './NotFound';
 
 class Routes extends React.Component {
@@ -17,6 +17,7 @@ class Routes extends React.Component {
         <Route path="/search" component={ Search } />
         <Route path="/album/:id" component={ Album } />
         <Route path="/favorites" component={ Favorites } />
+        <Route path="/profile/edit" component={ ProfileEdit } />
         <Route path="/profile" component={ Profile } />
         <Route path="*" component={ NotFound } />
       </Switch>
