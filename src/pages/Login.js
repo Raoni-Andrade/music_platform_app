@@ -32,7 +32,7 @@ class Login extends React.Component {
       isLoading: true,
     });
     await createUser({ name: loginName });
-    history.push('/search', this.state);
+    history.push('/search');
   };
 
   render() {
