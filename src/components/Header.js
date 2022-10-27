@@ -19,38 +19,35 @@ class Header extends React.Component {
     this.setState({
       isLoading: true,
     });
-    const userName = await getUser();
+    const username = await getUser();
     this.setState({
       isLoading: false,
-      userName: userName.name,
+      userName: username.name,
     });
   };
 
   render() {
     const { isLoading, userName } = this.state;
     return (
-      <>
-        <header className="Header" data-testid="header-component">
-          <nav>
-            <Link to="/search" data-testid="link-to-search">
-              Search
-            </Link>
-            <Link to="/favorites" data-testid="link-to-favorites">
-              Favorites
-            </Link>
-            <Link to="/profile" data-testid="link-to-profile">
-              Profile
-            </Link>
-          </nav>
-        </header>
-        {isLoading
-          ? <Loading />
+      <header className="Header" data-testid="header-component">
+        {isLoading ? <Loading />
           : (
             <h3 data-testid="header-user-name">
               { userName }
             </h3>
           )}
-      </>
+        <nav>
+          <Link to="/search" data-testid="link-to-search">
+            Search
+          </Link>
+          <Link to="/favorites" data-testid="link-to-favorites">
+            Favorites
+          </Link>
+          <Link to="/profile" data-testid="link-to-profile">
+            Profile
+          </Link>
+        </nav>
+      </header>
     );
   }
 }

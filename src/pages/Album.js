@@ -28,7 +28,6 @@ class Album extends React.Component {
       albumName: results[0].collectionName,
       fetchDone: true,
     });
-    console.log(songs);
   };
 
   render() {
@@ -37,7 +36,7 @@ class Album extends React.Component {
       <div data-testid="page-album">
         <Header />
         <h1>
-          Album
+          Albums
         </h1>
         { fetchDone && (
           <div>
@@ -53,8 +52,7 @@ class Album extends React.Component {
             </h3>
             {songs.map((song) => (<MusicCard
               key={ song.trackId }
-              trackName={ song.trackName }
-              previewURL={ song.previewURL }
+              song={ song }
             />))}
           </div>
         ) }
@@ -65,7 +63,9 @@ class Album extends React.Component {
 
 Album.propTypes = {
   match: PropTypes.shape({
-    params: PropTypes.objectOf,
+    params: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
   }),
 }.isRequired;
 
