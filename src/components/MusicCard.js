@@ -30,13 +30,14 @@ class MusicCard extends React.Component {
     });
   };
 
-  addOrRemoveFavorite = async (event) => {
+  addOrRemoveFavorite = async () => {
     const { song } = this.props;
+    const { favorite } = this.state;
     this.setState({
       isLoading: true,
     });
 
-    if (event.target.favorite) {
+    if (favorite === false) {
       await addSong(song);
       this.setState({
         favorite: true,
@@ -93,6 +94,7 @@ MusicCard.propTypes = {
   trackName: PropTypes.string,
   previewUrl: PropTypes.string,
   favorite: PropTypes.bool,
+  trackId: PropTypes.string.isRequired,
   addOrRemoveFavorite: PropTypes.func,
 }.isRequired;
 
