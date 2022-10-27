@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes, { objectOf, shape } from 'prop-types';
+import PropTypes from 'prop-types';
 import { createUser } from '../services/userAPI';
 import Loading from './Loading';
+import '../index.css';
 
 class Login extends React.Component {
   constructor() {
@@ -44,6 +45,7 @@ class Login extends React.Component {
             <form>
               <label htmlFor="name">
                 <input
+                  className="nameInput"
                   type="text"
                   id="name"
                   placeholder="Nome"
@@ -53,6 +55,7 @@ class Login extends React.Component {
                 />
               </label>
               <button
+                className="enterButton"
                 type="button"
                 data-testid="login-submit-button"
                 disabled={ !this.isButtonEnabled() }
@@ -68,11 +71,9 @@ class Login extends React.Component {
 }
 
 Login.propTypes = {
-  history: objectOf(
-    shape({
-      push: PropTypes.func,
-    }),
-  ).isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }).isRequired,
 };
 
 export default Login;

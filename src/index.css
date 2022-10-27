@@ -17,3 +17,28 @@ code {
   display: flex;
   justify-content: center;
 }
+
+.nameInput {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 440px;
+  top: 415px;
+  
+  border: 1px solid #003BE5;
+  border-radius: 100px;
+}
+
+.enterButton {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 440px;
+  top: 464px;
+
+  background: #003BE5;
+  border-radius: 100px;
+  color: white;
+}
