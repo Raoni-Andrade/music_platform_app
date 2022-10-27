@@ -75,17 +75,14 @@ class Search extends React.Component {
           { artistAlbums.length > 0 && !isLoading && (
             <div>
               <h3>
-                {' '}
                 Resultado de álbuns de:
-                {' '}
-                {artistName}
-                {' '}
+                { ` ${artistName}` }
               </h3>
               <AlbumsList artistAlbums={ artistAlbums } />
             </div>
           )}
-          {artistAlbums.length === 0 && !isLoading
-          && <h3>Nenhum álbum foi encontrado</h3>}
+          { artistAlbums.length === 0 && !isLoading
+          && <h3>Nenhum álbum foi encontrado</h3> }
         </section>
       </div>
     );
