@@ -41,14 +41,14 @@ class Login extends React.Component {
     return (
       isLoading ? <Loading />
         : (
-          <div data-testid="page-login">
+          <div /* className="boxBranco background" */ data-testid="page-login">
             <form>
               <label htmlFor="name">
                 <input
                   className="nameInput"
                   type="text"
                   id="name"
-                  placeholder="Nome"
+                  placeholder="qual é o seu nome?"
                   name="name"
                   data-testid="login-name-input"
                   onChange={ this.handleName }

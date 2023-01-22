@@ -11,8 +11,7 @@ import Search from './pages/Search';
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <p>TrybeTunes</p>
+      <div className="body">
         <Switch>
           <Route exact path="/" component={ Login } />
           <Route path="/search" component={ Search } />

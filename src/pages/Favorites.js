@@ -29,6 +29,10 @@ class Favorites extends React.Component {
     });
   };
 
+  updateFavoriteList = () => {
+    this.showFavoritesList();
+  };
+
   // updateFavoritesList = (music) => {
   //   const { favoritesList } = this.state;
   //   const updatedList = favoritesList
@@ -52,6 +56,7 @@ class Favorites extends React.Component {
                     <MusicCard
                       key={ song.trackId }
                       song={ song }
+                      update={ this.updateFavoriteList }
                     />
                   ))
                 }

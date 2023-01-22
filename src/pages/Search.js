@@ -49,10 +49,10 @@ class Search extends React.Component {
     return (
       <div data-testid="page-search">
         <Header />
-        <form>
+        <form /* </div> className="header" */>
           <label htmlFor="artist">
             <input
-              placeholder="Nome do Artista"
+              placeholder="type an artist to check 'em out!"
               id="artist"
               data-testid="search-artist-input"
               type="text"
@@ -61,6 +61,7 @@ class Search extends React.Component {
             />
           </label>
           <button
+            className="searchBtn"
             type="button"
             disabled={ !this.enableButton() }
             data-testid="search-artist-button"
@@ -69,7 +70,7 @@ class Search extends React.Component {
             Pesquisar
           </button>
         </form>
-        <section>
+        <section /* className="showArea" */>
           {isLoading && <Loading />}
 
           { artistAlbums.length > 0 && !isLoading && (
@@ -82,7 +83,7 @@ class Search extends React.Component {
             </div>
           )}
           { artistAlbums.length === 0 && !isLoading
-          && <h3>Nenhum álbum foi encontrado</h3> }
+          && <h3 className="albumNotFound">Nenhum álbum foi encontrado</h3> }
         </section>
       </div>
     );
