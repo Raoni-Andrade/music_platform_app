@@ -64,7 +64,7 @@ class MusicCard extends React.Component {
           </strong>
           <audio data-testid="audio-component" src={ previewURL } controls>
             <track kind="captions" />
-            O seu navegador não suporta o elemento
+            Your browser doesn&aps;t support the element
             {' '}
             <code>audio</code>
             .
@@ -72,8 +72,10 @@ class MusicCard extends React.Component {
           <label
             htmlFor={ trackId }
           >
-            Favorita
+            Favorite
             <input
+              className="material-symbols-outlined"
+              value="Favorite"
               id={ trackId }
               type="checkbox"
               track={ trackId }

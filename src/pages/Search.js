@@ -3,6 +3,7 @@ import AlbumsList from '../components/AlbumsList';
 import Header from '../components/Header';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Loading from './Loading';
+// import Footer from './Footer';
 
 class Search extends React.Component {
   constructor() {
@@ -28,6 +29,13 @@ class Search extends React.Component {
     });
   };
 
+  handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      console.log(event);
+      this.fetchArtist();
+    }
+  };
+
   fetchArtist = async () => {
     const { searchInput } = this.state;
     // const { history } = this.props;
@@ -42,6 +50,7 @@ class Search extends React.Component {
       isLoading: false,
       searchInput: '',
     });
+    // console.log(albumsFound);
   };
 
   render() {
@@ -49,7 +58,7 @@ class Search extends React.Component {
     return (
       <div data-testid="page-search">
         <Header />
-        <form /* </div> className="header" */>
+        <form>
           <label htmlFor="artist">
             <input
               placeholder="type an artist to check 'em out!"
@@ -57,6 +66,7 @@ class Search extends React.Component {
               data-testid="search-artist-input"
               type="text"
               onChange={ this.handleArtist }
+              onKeyDown={ this.handleKeyDown }
               value={ searchInput }
             />
           </label>
@@ -70,21 +80,22 @@ class Search extends React.Component {
             Pesquisar
           </button>
         </form>
-        <section /* className="showArea" */>
+        <section>
           {isLoading && <Loading />}
 
           { artistAlbums.length > 0 && !isLoading && (
             <div>
-              <h3>
+              {/* <h3>
                 Resultado de álbuns de:
                 { ` ${artistName}` }
-              </h3>
+              </h3> */}
               <AlbumsList artistAlbums={ artistAlbums } />
             </div>
           )}
-          { artistAlbums.length === 0 && !isLoading
-          && <h3 className="albumNotFound">Nenhum álbum foi encontrado</h3> }
+          {/* { artistAlbums.length === 0 && !isLoading
+          && <h3 className="albumNotFound">Nenhum álbum foi encontrado</h3> } */}
         </section>
+        {/* <Footer /> */}
       </div>
     );
   }

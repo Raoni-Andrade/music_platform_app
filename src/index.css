@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,13 +16,13 @@ code {
     monospace;
 }
 
-.loading {
+/* .loading {
   align-items: center;
   display: flex;
   justify-content: center;
-}
+} */
 
-.nameInput {
+/* .nameInput {
   box-sizing: border-box;
 
   position: absolute;
@@ -29,9 +33,9 @@ code {
   
   border: 1px solid #003BE5;
   border-radius: 100px;
-}
+} */
 
-.enterButton {
+/* .enterButton {
   position: absolute;
   width: 400px;
   height: 40px;
@@ -41,16 +45,16 @@ code {
   background: #003BE5;
   border-radius: 100px;
   color: white;
-}
+} */
 
-.searchBtn {
+/* .searchBtn {
   position: absolute;
   width: 114px;
   height: 40px;
   left: 913px;
   top: 97px;
 
-}
+} */
 
 /* .body {
   position: relative;
@@ -60,7 +64,7 @@ code {
   background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
 } */
 
-.boxBranco {
+/* .boxBranco {
   position: absolute;
 width: 750px;
 height: 450px;
@@ -70,7 +74,7 @@ top: 135px;
 background: #FFFFFF;
 box-shadow: 0px 0px 26px rgba(68, 73, 85, 0.2);
 border-radius: 20px;
-}
+} */
 
 /* ::placeholder {
   position: absolute;
@@ -89,7 +93,7 @@ text-align: center;
 color: #003BE5;
 } */
 
-.aside {
+/* .aside {
   height: 720px;
   width: 250px;
   left: 0px;
@@ -111,9 +115,9 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-align: left;
 background: #444955;
-  }
+  } */
 
-.favorites {
+/* .favorites {
   position: absolute;
 width: 75px;
 height: 16px;
@@ -129,9 +133,9 @@ letter-spacing: 0.03em;
 text-transform: capitalize;
 
 color: #444955;
-}
+} */
 
-.profile {
+/* .profile {
   position: absolute;
 width: 42px;
 height: 16px;
@@ -147,9 +151,9 @@ letter-spacing: 0.03em;
 text-transform: capitalize;
 
 color: #444955;
-}
+} */
 
-.username {
+/* .username {
   position: absolute;
 width: 83px;
 height: 16px;
@@ -165,8 +169,8 @@ letter-spacing: 0.03em;
 text-transform: capitalize;
 
 color: #444955;
-}
-
+} */
+/* 
 .albumNotFound {
   position: absolute;
 width: 448px;
@@ -181,12 +185,12 @@ font-size: 30px;
 line-height: 31px;
 /* identical to box height */
 
-text-align: center;
+/* text-align: center; */
 
-color: #C0C3C9;
-}
+/* color: #C0C3C9; */
+/* } */
 
-.loading {
+/* .loading {
   position: absolute;
 width: 321px;
 height: 50px;
@@ -211,9 +215,9 @@ color: #C0C3C9;
   border-radius: 0px;
   background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
 
-}
+} */
 
-.showArea {
+/* .showArea {
   height: 486px;
   width: 1030px;
   left: 250px;
@@ -221,4 +225,4 @@ color: #C0C3C9;
   border-radius: 0px;
   background: #EFF3F9;
 
-}
+} */

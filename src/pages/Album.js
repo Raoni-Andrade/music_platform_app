@@ -28,16 +28,14 @@ class Album extends React.Component {
       albumName: results[0].collectionName,
       fetchDone: true,
     });
+    console.log(params);
+    // console.log(songs);
   };
 
   render() {
     const { songs, fetchDone, artistName, albumName } = this.state;
     return (
       <div data-testid="page-album">
-        <Header />
-        <h1>
-          Albums
-        </h1>
         { fetchDone && (
           <div>
             <img
@@ -53,7 +51,6 @@ class Album extends React.Component {
             {songs.map((song) => (<MusicCard
               key={ song.trackId }
               song={ song }
-              // updateFavoritesList={ updateFavoritesList }
             />))}
           </div>
         ) }

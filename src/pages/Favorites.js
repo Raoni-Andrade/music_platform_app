@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
+import FullPage from './SearchFullPage';
 
 class Favorites extends React.Component {
   constructor() {
