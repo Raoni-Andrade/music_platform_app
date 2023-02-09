@@ -21,20 +21,20 @@
 <h2>💻 Technologies used: </h2>
 
 <ul>
-<li>CSS</li>
-<li>JS</li>
-<li>React </li>
-<li>React Router Dom </li>
-<li>Lifecycle of React Components</li>
-<li>API Requests</li>
-<li>Redux</li>
+<li>CSS; </li>
+<li>JS; </li>
+<li>React; </li>
+<li>React Router Dom; </li>
+<li>Lifecycle of React Components; </li>
+<li>API Requests; </li>
+<li>Redux; </li>
 </ul>
 
 </br>
 
 <h4>Acknowledgements: </h4>
 
-- [Trybe Course](https://www.betrybe.com/).
+- [Trybe Course](https://www.betrybe.com/)
 <br/>
 
 <h5> Folder "Services" Created By Trybe. </h5>
