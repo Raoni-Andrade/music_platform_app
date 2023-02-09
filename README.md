@@ -5,13 +5,6 @@
 <p>A music streaming platform application, which is possible for you to search among artists, play their albums, add songs to your favorites list and edit your profile. </p>
 </div>
 
-<h2>:eye_speech_bubble: Preview: </h2>
-
-![Screenshot](https://user-images.githubusercontent.com/108954035/217932151-80efbe77-da66-4e44-9bf2-d629dc37fbd4.png)
-![Screenshot](https://user-images.githubusercontent.com/108954035/217936919-dbed0c5b-0264-46e6-88ee-47c31a27786a.png)
-
-
-
 <h2>:rocket: Available features: </h2>
 
 <ul> 
@@ -39,6 +32,12 @@
 </ul>
 
 </br>
+
+<h2>:eye_speech_bubble: Preview: </h2>
+
+![Screenshot](https://user-images.githubusercontent.com/108954035/217932151-80efbe77-da66-4e44-9bf2-d629dc37fbd4.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217936919-dbed0c5b-0264-46e6-88ee-47c31a27786a.png)
+
 
 <h4>Acknowledgements: </h4>
 
