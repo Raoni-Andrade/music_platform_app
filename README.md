@@ -8,8 +8,9 @@
 
 <div>
 <h2>:eye_speech_bubble: Preview: </h2>
-![Screenshot from 2023-02-09 17-20-23](https://user-images.githubusercontent.com/108954035/217930659-7d81e3b4-a5d0-496f-95ab-a6b493e55578.png)
-![Screenshot from 2023-02-02 02-17-51](https://user-images.githubusercontent.com/108954035/217930668-976221fa-891d-4ef4-bfb1-877c314e43b4.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217930875-2fcbfa53-b3a1-45f1-abe7-dbca2aba7194.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217930882-eff65e71-5f28-4406-b23f-b50a29f09756.png)
+
 
 </div>
 
