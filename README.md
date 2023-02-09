@@ -1,3 +1,4 @@
+
 <h1>TrybeTunes 🎶 </h1>  
 
 <div>
@@ -7,8 +8,8 @@
 
 <div>
 <h2>:eye_speech_bubble: Preview: </h2>
-![Screenshot](https://user-images.githubusercontent.com/108954035/217929441-fc7825fe-d4d2-4183-9704-61b0aef44583.png)
-![Screenshot](https://user-images.githubusercontent.com/108954035/217929706-d0f322f0-cb92-40aa-864f-d9d60ae93009.png)
+![Screenshot from 2023-02-09 17-20-23](https://user-images.githubusercontent.com/108954035/217930476-7d144ca4-b3da-4a84-abbe-5bc2de55970b.png)
+![Screenshot from 2023-02-02 02-17-51](https://user-images.githubusercontent.com/108954035/217930484-30dd6190-2735-4650-a8fc-566776dd6ba4.png)
 </div>
 
 <h2>:rocket: Available features: </h2>
