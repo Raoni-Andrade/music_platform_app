@@ -1,4 +1,3 @@
-
 <h1>TrybeTunes 🎶 </h1>  
 
 <div>
@@ -6,13 +5,11 @@
 <p>A music streaming platform application, which is possible for you to search among artists, play their albums, add songs to your favorites list and edit your profile. </p>
 </div>
 
-<div>
 <h2>:eye_speech_bubble: Preview: </h2>
-![Screenshot](https://user-images.githubusercontent.com/108954035/217930875-2fcbfa53-b3a1-45f1-abe7-dbca2aba7194.png)
-![Screenshot](https://user-images.githubusercontent.com/108954035/217930882-eff65e71-5f28-4406-b23f-b50a29f09756.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217934838-34e212e5-8a87-41c9-81c1-70707a4199da.png)
 
+![Screenshot](https://user-images.githubusercontent.com/108954035/217932151-80efbe77-da66-4e44-9bf2-d629dc37fbd4.png)
 
-</div>
 
 <h2>:rocket: Available features: </h2>
 
