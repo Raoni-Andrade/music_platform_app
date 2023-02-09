@@ -8,8 +8,8 @@
 
 <div>
 <h2>:eye_speech_bubble: Preview: </h2>
-![Screenshot from 2023-02-09 17-20-23](https://user-images.githubusercontent.com/108954035/217930476-7d144ca4-b3da-4a84-abbe-5bc2de55970b.png)
-![Screenshot from 2023-02-02 02-17-51](https://user-images.githubusercontent.com/108954035/217930484-30dd6190-2735-4650-a8fc-566776dd6ba4.png)
+![Screenshot from 2023-02-09 17-20-23](https://user-images.githubusercontent.com/108954035/217930659-7d81e3b4-a5d0-496f-95ab-a6b493e55578.png)![Screenshot from 2023-02-02 02-17-51](https://user-images.githubusercontent.com/108954035/217930668-976221fa-891d-4ef4-bfb1-877c314e43b4.png)
+
 </div>
 
 <h2>:rocket: Available features: </h2>
