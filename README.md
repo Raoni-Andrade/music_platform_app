@@ -6,9 +6,9 @@
 </div>
 
 <h2>:eye_speech_bubble: Preview: </h2>
-![Screenshot](https://user-images.githubusercontent.com/108954035/217934838-34e212e5-8a87-41c9-81c1-70707a4199da.png)
-
 ![Screenshot](https://user-images.githubusercontent.com/108954035/217932151-80efbe77-da66-4e44-9bf2-d629dc37fbd4.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217936919-dbed0c5b-0264-46e6-88ee-47c31a27786a.png)
+
 
 
 <h2>:rocket: Available features: </h2>
