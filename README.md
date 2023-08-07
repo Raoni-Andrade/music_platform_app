@@ -1,13 +1,48 @@
-# :construction: README in construction ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<h1>TrybeTunes 🎶 </h1>  
+>>>>>>> cb90c187298c863863749e6322c17ed0b8843b3d
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+<div>
+<h2>:information_source: About: </h2>
+<p>A music streaming platform application, which is possible for you to search among artists, play their albums, add songs to your favorites list and edit your profile. </p>
+</div>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+<h2>:rocket: Available features: </h2>
+
+<ul> 
+<li>Log in; </li>
+<li>Search for a band or artist; </li>
+<li>Listing of available albums; </li>
+<li>Listing of songs inside an album; </li>
+<li>Play song previews; </li>
+<li>Favorite songs; </li>
+<li>Profile page; </li>
+<li>Edit profile page; </li>
+
+</ul>
+
+<h2>💻 Technologies used: </h2>
+
+<ul>
+<li>CSS; </li>
+<li>JS; </li>
+<li>React; </li>
+<li>React Router Dom; </li>
+<li>Lifecycle of React Components; </li>
+<li>API Requests; </li>
+<li>Redux; </li>
+</ul>
+
+</br>
+
+<h2>:eye_speech_bubble: Preview: </h2>
+
+![Screenshot](https://user-images.githubusercontent.com/108954035/217932151-80efbe77-da66-4e44-9bf2-d629dc37fbd4.png)
+![Screenshot](https://user-images.githubusercontent.com/108954035/217936919-dbed0c5b-0264-46e6-88ee-47c31a27786a.png)
+
+
+<h4>Acknowledgements: </h4>
+
+- [Trybe Course](https://www.betrybe.com/)
+<br/>
+
+<h5> Folder "Services" Created By Trybe. </h5>
