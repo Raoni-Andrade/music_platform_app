@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-max-depth */
@@ -6,21 +8,21 @@ import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
   Bars3BottomLeftIcon,
   BellIcon,
-  CalendarIcon,
+  // CalendarIcon,
   ChartBarIcon,
   FolderIcon,
-  HomeIcon,
-  InboxIcon,
+  // HomeIcon,
+  // InboxIcon,
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
+import { Link } from 'react-router-dom';
 import LoginBackground from '../images/LoginBackground.svg';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Loading from './Loading';
 import AlbumsContext from '../context/AlbumsContext';
 import AlbumsListUpdated from '../components/AlbumsListUpdated';
-import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Search', href: '/test', icon: FolderIcon, current: false },
@@ -46,18 +48,19 @@ function SearchFullPage() {
     setArtistName,
     searchInput,
     setSearchInput,
-    albumName,
-    setAlbumName,
-    artUrl,
-    setArtUrl,
-    songs,
-    setSongs,
-    albumId,
-    setAlbumId,
+    // albumName,
+    // setAlbumName,
+    // artUrl,
+    // setArtUrl,
+    // songs,
+    // setSongs,
+    // albumId,
+    // setAlbumId,
     albumsFromArtist,
     setAlbumsFromArtist,
-    favoritesList,
-    setFavoritesList } = useContext(AlbumsContext);
+    // favoritesList,
+    // setFavoritesList
+  } = useContext(AlbumsContext);
 
   // enableButton = () => {
   //   const { searchInput } = this.state;
@@ -324,12 +327,15 @@ function SearchFullPage() {
                       { ` ${artistName}` }
                     </h3>
                   )}
-                  { albumsFromArtist === null && !isLoading
-                       && <div className="mx-auto max-w-7xl pxm s-4 sm:px-6 md:px-8">
-                         <h3 className="albumNotFound">
-                           No album found
-                         </h3>
-                          </div> }
+                  {
+                    albumsFromArtist === null && !isLoading
+                    && <div className="mx-auto max-w-7xl pxm s-4 sm:px-6 md:px-8">
+                      <h3 className="albumNotFound">
+                        No album found
+                      </h3>
+
+                    </div>
+                  }
                 </h1>
               </div>
               {/* Replace with your content */}
