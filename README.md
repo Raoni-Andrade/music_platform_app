@@ -1,4 +1,4 @@
-<h1>TrybeTunes 🎶 </h1>  
+<h1>Music Platform 🎶 </h1>  
 
 <div>
 <h2>:information_source: About: </h2>
