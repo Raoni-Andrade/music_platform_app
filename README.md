@@ -1,5 +1,4 @@
-<h1>TrybeTunes 🎶 </h1>  
->>>>>>> cb90c187298c863863749e6322c17ed0b8843b3d
+<h1>Music Platform 🎶 </h1>  
 
 <div>
 <h2>:information_source: About: </h2>
