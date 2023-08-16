@@ -27,7 +27,7 @@ import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
 import AlbumsContext from '../context/AlbumsContext';
 import MusicCardTail from '../components/MusicCardTail';
-// import files from '../files.js';
+import Grid from '../components/Grid';
 
 const navigation = [
   { name: 'Search', href: '/test', icon: FolderIcon, current: false },
@@ -393,11 +393,12 @@ function AlbumFullPage() {
                           </ul>
                         </div>
                         <ul role="list" className="space-y-3">
-                          {songs.map((song) => (
+                          <Grid />
+                          {/* {songs.map((song) => (
                             <li key={ song.trackId } className="overflow-hidden rounded-md bg-white px-6 py-4 shadow">
                               <MusicCardTail key={ song.trackId } song={ song } />
                             </li>
-                          ))}
+                          ))} */}
                         </ul>
                         <div className="overflow-hidden bg-white shadow sm:rounded-md" />
                       </div>

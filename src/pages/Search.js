@@ -77,7 +77,7 @@ class Search extends React.Component {
             data-testid="search-artist-button"
             onClick={ this.fetchArtist }
           >
-            Pesquisar
+            Search
           </button>
         </form>
         <section>

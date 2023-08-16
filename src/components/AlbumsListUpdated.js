@@ -38,15 +38,16 @@ function AlbumsListUpdated() {
               <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                 <img className="pointer-events-none object-cover group-hover:opacity-75" src={ album.artworkUrl100 } alt={ album.collectionName } />
                 {album.collectionName}
+                <br />
                 {album.artistName}
                 <Link
                   to={ `/music/${album.collectionId}` }
                   data-testid={ `link-to-album-${album.collectionId}` }
                   className="absolute inset-0 focus:outline-none"
                 >
-                  <span className="sr-only">
+                  {/* <span className="sr-only">
                     More info here
-                  </span>
+                  </span> */}
                 </Link>
               </div>
               <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{album.collectionName}</p>

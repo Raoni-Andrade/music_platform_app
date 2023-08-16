@@ -9,26 +9,12 @@ function MusicCardTail(props) {
   const {
     isLoading,
     setIsLoading,
-    // artistName,
-    // setArtistName,
-    // searchInput,
-    // setSearchInput,
-    // albumName,
-    // setAlbumName,
-    // artUrl,
-    // setArtUrl,
-    // songs,
-    // setSongs,
-    // albumId,
-    // setAlbumId,
-    // albumsFromArtist,
-    // setAlbumsFromArtist,
     favoritesList,
     setFavoritesList } = useContext(AlbumsContext);
 
   const [favorite, setFavorite] = useState(false);
   const { song, update } = props;
-  const { trackName, previewURL, trackId } = song;
+  const { trackName, previewUrl, trackId } = song;
   // console.log(update);
 
   const checkIfFavorite = async () => {
@@ -67,17 +53,20 @@ function MusicCardTail(props) {
         <strong>
           { trackName }
         </strong>
-        <audio data-testid="audio-component" src={ previewURL } controls>
+        <audio data-testid="audio-component" className="songCard" controls>
+          <source src={ previewUrl } type="audio/mp3" />
           <track kind="captions" />
           Your browser doesn&aps;t support the element
           {' '}
           <code>audio</code>
           .
+          Seu navegador não suporta a tag de áudio.
         </audio>
         <label
           htmlFor={ trackId }
         >
-          Favorite
+          { !favorite ? 'Wanna add this song to your favorites? '
+            : 'Saved on favorites! '}
           <input
             className="material-symbols-outlined"
             value="Favorite"
