@@ -36,5 +36,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// redirecting done
