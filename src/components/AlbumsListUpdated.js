@@ -41,7 +41,7 @@ function AlbumsListUpdated() {
                 <br />
                 {album.artistName}
                 <Link
-                  to={ `/album/${album.collectionId}` }
+                  to={ `/music/${album.collectionId}` }
                   data-testid={ `link-to-album-${album.collectionId}` }
                   className="absolute inset-0 focus:outline-none"
                 >

@@ -16,10 +16,10 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={ Login } />
           {/* <Route path="/search" component={ Search } /> */}
-          <Route path="/search" component={ SearchInterface } />
+          <Route path="/test" component={ SearchInterface } />
           {/* <Route path="/album/:id" render={ (props) => <Album { ...props } /> } /> */}
           <Route
-            path="/album/:id"
+            path="/music/:id"
             component={ AlbumInterface }
 
           />

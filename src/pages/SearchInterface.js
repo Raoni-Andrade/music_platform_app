@@ -12,7 +12,7 @@ function SearchInterface() {
 
   const {
     // isLoading,
-    // setIsLoading,
+    setIsLoading,
     // artistName,
     // setArtistName,
     searchInput,
@@ -41,16 +41,6 @@ function SearchInterface() {
   useEffect(() => {
     fetchArtist();
   }, []);
-
-  // const enableButton = () => {
-  //   const min = 2;
-  //   return searchInput.length >= min;
-  // };
-
-  // const handleArtist = (event) => {
-  //   setArtistName(event.target.value);
-  //   setSearchInput(event.target.value);
-  // };
 
   return (
     <SearchFullPage />

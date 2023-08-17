@@ -82,30 +82,11 @@ function AlbumFullPage() {
   // };
 
   const songsFromAlbum = async () => {
-    // const { match: { params } } = props;
-    // const { id } = params;
-    // const magic = 588335548;
-    // const something = albumsFromArtist.map((album) => console.log(album.collectionId) ));
-
     const results = await getMusics(collectionId);
     setSongs(results.filter((song, index) => index > 0));
-    // const rolha = results.map((song, index) => (
-    //   console.log(song, index)
-    // setArtistName(song[index].artistName),
-    // setAlbumName(song[index].collectionName),
-    // setArtUrl(song[index].artworkUrl100),
-    // setAlbumId(song[index].collectionId)
-    // ));
-    // songs,
     setArtistName(results[0].artistName);
     setAlbumName(results[0].collectionName);
     setArtUrl(results[0].artworkUrl100);
-    // setAlbumId(results[0].collectionId);
-    // fetchDone: true,
-    // console.log(rolha);
-    // console.log(results);
-    // console.log(albumName);
-    // console.log(artUrl);
   };
   // console.log('SONGS: ', songs);
 
