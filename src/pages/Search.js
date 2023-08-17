@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 import React from 'react';
 import AlbumsList from '../components/AlbumsList';
 import Header from '../components/Header';
@@ -54,7 +55,7 @@ class Search extends React.Component {
   };
 
   render() {
-    const { isLoading, artistAlbums, searchInput, artistName } = this.state;
+    const { isLoading, artistAlbums, searchInput } = this.state;
     return (
       <div data-testid="page-search">
         <Header />

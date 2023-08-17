@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
@@ -7,11 +9,8 @@ import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
   Bars3BottomLeftIcon,
   BellIcon,
-  CalendarIcon,
   ChartBarIcon,
   FolderIcon,
-  HomeIcon,
-  InboxIcon,
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
@@ -21,12 +20,8 @@ import { useHistory } from 'react-router-dom';
 import LoginBackground from '../images/LoginBackground.svg';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Loading from './Loading';
-import AlbumsList from '../components/AlbumsList';
-import Album from './Album';
 import getMusics from '../services/musicsAPI';
-import MusicCard from '../components/MusicCard';
 import AlbumsContext from '../context/AlbumsContext';
-import MusicCardTail from '../components/MusicCardTail';
 import Grid from '../components/Grid';
 
 const navigation = [
@@ -59,21 +54,9 @@ function AlbumFullPage() {
     setAlbumName,
     artUrl,
     setArtUrl,
-    songs,
     setSongs,
     albumId,
-    // setAlbumId,
-    // albumsFromArtist,
-    // setAlbumsFromArtist,
-    // favoritesList,
-    // setFavoritesList,
   } = useContext(AlbumsContext);
-
-  // enableButton = () => {
-  //   const { searchInput } = this.state;
-  //   const min = 2;
-  //   return searchInput.length >= min;
-  // };
 
   const handleArtist = (event) => {
     setArtistName(event.target.value);
@@ -389,7 +372,7 @@ function AlbumFullPage() {
                               </div>
                               <h2 data-testid="album-name" className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{albumName}</h2>
                               <h3 data-testid="artist-name" className="pointer-events-none block text-sm font-medium text-gray-500">{artistName}</h3>
-                             </li>}
+                            </li>}
                           </ul>
                         </div>
                         <ul role="list" className="space-y-3">

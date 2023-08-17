@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
-import FullPage from './SearchFullPage';
 
 class Favorites extends React.Component {
   constructor() {
@@ -33,15 +32,6 @@ class Favorites extends React.Component {
   updateFavoriteList = () => {
     this.showFavoritesList();
   };
-
-  // updateFavoritesList = (music) => {
-  //   const { favoritesList } = this.state;
-  //   const updatedList = favoritesList
-  //     .filter((song) => song.trackId !== music.trackId);
-  //   this.setState({
-  //     favoritesList: updatedList,
-  //   });
-  // };
 
   render() {
     const { favoritesList, isLoading } = this.state;

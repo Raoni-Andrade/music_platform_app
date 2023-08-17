@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-max-depth */
@@ -6,11 +8,8 @@ import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
   Bars3BottomLeftIcon,
   BellIcon,
-  CalendarIcon,
   ChartBarIcon,
   FolderIcon,
-  HomeIcon,
-  InboxIcon,
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
@@ -19,8 +18,6 @@ import LoginBackground from '../images/LoginBackground.svg';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Loading from './Loading';
 import AlbumsContext from '../context/AlbumsContext';
-import AlbumsListUpdated from '../components/AlbumsListUpdated';
-import MusicCard from '../components/MusicCard';
 import MusicCardTail from '../components/MusicCardTail';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 
@@ -39,7 +36,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-function SearchFullPage(props) {
+function SearchFullPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const {
     isLoading,
@@ -48,26 +45,10 @@ function SearchFullPage(props) {
     setArtistName,
     searchInput,
     setSearchInput,
-    albumName,
-    setAlbumName,
-    artUrl,
-    setArtUrl,
-    songs,
-    setSongs,
-    albumId,
-    setAlbumId,
     albumsFromArtist,
     setAlbumsFromArtist,
     favoritesList,
     setFavoritesList } = useContext(AlbumsContext);
-
-  // enableButton = () => {
-  //   const { searchInput } = this.state;
-  //   const min = 2;
-  //   return searchInput.length >= min;
-  // };
-  // const { update } = props;
-  // console.log(update);
 
   const handleArtist = (event) => {
     setArtistName(event.target.value);
@@ -348,7 +329,7 @@ function SearchFullPage(props) {
                          <h3 className="albumNotFound">
                            No album found
                          </h3>
-                          </div> }
+                       </div> }
                 </h1>
               </div>
               {/* Replace with your content */}
